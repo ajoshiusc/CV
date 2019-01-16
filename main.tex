@@ -1,0 +1,644 @@
+% cv-us.tex
+% $Id: anand_resume.tex,v 1.5 2007-12-31 22:21:04 ajoshi Exp $
+%
+% LaTeX Curriculum Vitae Template
+%
+% Copyright (C) 2004-2006 Jason Blevins
+%
+% You may use use this document as a template to create your own CV
+% and you may redistribute the source code freely. No attribution is
+% required in any resulting documents, however, I do ask that you
+% please leave this notice and the above URL in the source code if you
+% choose to redistribute this file.
+%
+% Jason R. Blevins <jrblevin@sdf.lonestar.org>
+% http://jrblevin.freeshell.org
+% Durham, December 12, 2006
+%
+%%---------------------------------------------------------------------------%
+%
+% Notes:
+%
+% * Don't forget to change `pdfauthor' and `keywords' in the \hypersetup
+%   section below.
+%
+% * To create a new page use: \newpage \opening
+%
+% * res.cls includes an \address{} command which can be used up to twice,
+%   but my address is too long for the format it uses.
+%
+% * Alternate documentclass statement to put headings in margin:
+%   \documentclass[margin,line,11pt,final]{res}
+%
+% * Can divide publication/presentation list into subsections by year:
+%   \section{\bf\small\hspace{8mm}2006}
+%
+%%----------------------------------------------------------------------------%
+
+\documentclass[overlapped,line,letterpaper]{res}
+%\documentclass{llncs}
+\usepackage{ifpdf}
+\usepackage{amsmath}
+
+\ifpdf
+  \usepackage[pdftex]{hyperref}
+\else
+  \usepackage[hypertex]{hyperref}
+\fi
+
+\hypersetup{
+  letterpaper,
+  colorlinks,
+  urlcolor=black,
+  pdfpagemode=none,
+  pdftitle={Curriculum Vitae},
+  pdfauthor={Anand A. Joshi},
+  pdfcreator={$ $Id: anand_resume.tex,v 1.5 2007-12-31 22:21:04 ajoshi Exp $ $},
+  pdfsubject={Curriculum Vitae},
+  pdfkeywords={}
+}
+
+
+\newenvironment{list1}{
+  \begin{list}{\ding{113}}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in}
+      \setlength{\leftmargin}{0.17in}}}{\end{list}}
+\newenvironment{list2}{
+  \begin{list}{$\bullet$}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in}
+      \setlength{\leftmargin}{0.2in}}}{\end{list}}
+
+
+%%===========================================================================%%
+
+\begin{document}
+
+%---------------------------------------------------------------------------
+% Document Specific Customizations
+
+% Make lists without bullets and with no indentation
+\setlength{\leftmargini}{0em}
+\renewcommand{\labelitemi}{}
+
+% Use large bold font for printed name at top of pages
+\renewcommand{\namefont}{\Large\textbf}
+
+%---------------------------------------------------------------------------
+
+\name{Anand A. Joshi}
+
+\begin{resume}
+
+\section{CONTACT INFORMATION}
+\begin{ncolumn}{2} Anand A. Joshi& {\tt ajoshi@usc.edu} \\
+  Signal \& Image Processing Institute,       & Phone: +1 (213) 284-4971 \\
+  University of Southern California,& {\tt \verb+http://sipi.usc.edu/~ajoshi+} \\
+  University Park Campus,\\
+  EEB 426, M/C 2564, \\
+  Los Angeles, CA 90089-2564               & 
+\end{ncolumn}
+
+
+
+
+\section{\bf EDUCATION}
+
+{\bf University of Southern California, Los Angeles (2002-2008)}\\
+\vspace*{-.1in}
+\begin{list1}
+\item[] Ph.D., Electrical Engineering, August 2008
+\begin{list2}
+%\vspace*{.05in}
+\item Dissertation Topic: Geometric Methods for Image Registration and Analysis
+\item Advisor: Richard M. Leahy\\
+\end{list2}
+\item[] M.A.~in Mathematics, May 2006
+\begin{list2}
+\item Thesis Topic: Harmonic Maps Between Riemannian Manifolds
+\item Advisor: Francis Bonahon
+\end{list2}
+\end{list1}
+
+{\bf Indian Institute of Technology, Kanpur (1999-2000)}\\
+\vspace*{-.1in}
+\begin{list1}
+\item[] M.Tech.~in Electrical Engineering, May 2000
+\begin{list2}
+\item Thesis Topic: 2D and 3D image segmentation using level sets
+\item Advisor: Govind Sharma
+\end{list2}
+\end{list1}
+
+{\bf Shivaji University (1993-1997)} \textbf{Graduated with Distinction}\\
+\vspace*{-.1in}
+\begin{list1}
+\item[] B.E.~in Electronics, May 1997
+\begin{list2}
+\item Thesis Topic: Speaker Verification System using Spectral Analysis
+\item Advisor: S D Apte
+\end{list2}
+\end{list1}
+
+%
+%\section{\bf RESEARCH EXPERIENCE}
+%Registration and analysis of neuro-imaging data presents a challenging
+%problem due to the complex folding patterns in the human brain.
+%Specifically, the cortical surface of the human brain can be modeled as
+%a highly convoluted 2D surface. Since it is non-flat, the non-euclidean
+%geometry of the cortex needs to be accounted for while performing
+%registration and subsequent signal processing of anatomical and
+%functional signals on the cortex. Techniques from differential geometry
+%offer a powerful set of tools to deal with the convoluted nature of the
+%cortex. We present a method based on p-harmonic mapping for performing
+%cortical surface parameterization. A 2D coordinate system induced by the
+%flat mapping is then used to compute the surface metric and discretize
+%derivatives in the surface geometry. For performing inter-subject
+%cortical registration based on sulcal landmarks, we generalize
+%thin-plate splines to non-flat surfaces by using covariant derivatives.
+%We also present an FEM based method for simultaneous parameterization
+%and registration of sulcal landmarks based on elastic energy
+%minimization. These can be used to bring surface signals from individual
+%brains to a common atlas surface. Isotropic and anisotropic diffusion
+%filtering methods are formulated for processing of the cortical data.
+%When the surface data is a point-set on the cortex, we propose a method
+%to quantify its mean and variance with respect to the surface geometry.
+%The registration techniques presented for surface alignment are then
+%extended to volumes to perform full surface and volume registration.
+%This is done by using volumetric harmonic mappings that extend the
+%surface point correspondence to the cortical brain volume. Finally, the
+%volumetric registration is refined by using inverse-consistent linear
+%elastic intensity registration. This set of methods presents a unified
+%framework for registration and analysis of the brain signals for
+%inter-subject neuroanatomical studies.
+
+%\newpage
+
+
+%---------------------------------------------------------------------------
+
+\section{\bf PROFESSIONAL EXPERIENCE}
+
+\begin{itemize}
+\item (2012-present) Research Assistant Professor, Signal and Image Processing Institute, University of Southern California. 
+\item (2011) Post Doctoral Associate at Signal and Image Processing Institute (SIPI), University of Southern California, Los Angeles.
+\item (2008-2010) Post Doctoral Scholar at Laboratory of Neuro Imaging (LONI), Univ. of Cal. Los Angeles (UCLA).
+\item (Fall 2002-2008) Research Assistant (RA) at University of Southern California, Los Angeles.
+\item (Fall 2005) Teaching Assistant, EE583 (Advance Filtering Theory), University of Southern California, Los Angeles.
+\item (Sp 2004) Teaching Assistant, EE563 (Estimation Theory), University of Southern California, Los Angeles.
+\item (Sp. 2003, Fall 2003) Teaching Assistant, EE464 (Probability Theory), University of Southern California, Los Angeles.
+\item (2000-2002) Software Engineer and later Senior Software Engineer at \textbf{SASKEN Ltd.}, Bangalore.
+\item (Sp. 2000) Teaching Assistant, DSP, IIT Kanpur.
+\item (1998) Engineering executive-marketing in \textbf{SIEMENS Ltd}, Mumbai.
+
+\section{\bf ACADEMIC SERVICE}
+\item Reviewer for IEEE Transactions on Medical Imaging, 2005-present
+\item Reviewer for IEEE Transactions on Image Process,  2006-present 
+\item Reviewer for NeuroImage,  2006-present
+\item Reviewer for Human Brain Mapping,  2008-present 
+\item  Reviewer for IEEE International Symposium on Biomedical Imaging,  2005-present
+\item Reviewer for International Conference on Information Processing in Medical Imaging, 2006-present
+\item Reviewer for Medical Image Computing and Computer Assisted Intervention, 2005-present 
+\item Reviewer for SIAM Journal on Imaging Sciences. 2010-present
+\item Reviewer for IEEE Journal of Biomedical and Health Informatics, 2013-present
+\item Reviewer for IEEE Transactions on Biomedical Imaging, 2012-present
+\item Reviewer for Grant reviewer for NSF, 2010- present 
+\item Reviewer for Archives of General Psychiatry, 2011-present
+\item Reviewer for Pattern Recognition, Elsevier, 2013-present
+\item Reviewer for International Journal of Speech Technology, 2012-present
+\item Book reviewer for Cambridge University Press, 2012-present
+\item Book reviewer for Wiley, 2012-present
+\item Grant Review committee Clinical and Translational Science Institute (CTSI), 2012-present
+\item Session Chair at Medical Image Computing and Computer Assisted Intervention (MICCAI) 2013.
+\item Served as Directed research mentor for 4 graduate students in Fall 2015.
+\end{itemize}
+
+\section{\bf TEACHING}
+\begin{itemize}
+\item EE599: Computational Differential Equations for Engineers, Spring 2015.
+\item EE599: Computational Differential Equations for Engineers, Spring 2014.
+\item EE575: Computational Differential Equations for Engineers, Fall 2016.
+\end{itemize}
+
+\section{\bf AWARDS AND HONORS}
+
+\begin{itemize}
+\item Academic achievement award (2008) for GPA 4.0 in EE and GPA 4.0 in Math by USC OIS.
+\item Phi Kappa Phi Honors society (2008).
+\item Deans fellowship for research related travel, USC 2007.
+\item Travel awards at ISBI 2004 and ISBI 2007, ISBI 2008, ISBI 2009.
+\item Best young investigated poster award at IPMI 2005.
+\item Individual award for outstanding performance, smart project award and team award for outstanding quality by SASKEN Ltd. 2001.
+\item National merit scholarship by Govt. of India 1993-1997.
+\end{itemize}
+
+\newpage
+
+\section{\bf PUBLICATIONS}
+\subsection{Journal Articles}
+
+Tuvblad C, Niv S, Ashrafulla S, \textbf{Joshi AA}, Raine A, Leahy RM, Baker LA, Relationships of Alpha, Beta, and Theta EEG Spectra Properties with Aggressive and Nonaggressive Antisocial Behavior in Children and Adolescents, American Journal of Psychology, Vol. 131(4), pp. 429-437, 2018.
+
+\textbf{Joshi AA}, Chong M, Li J, Choi S, Leahy RM, Are you thinking what I'm thinking? Synchronization of resting fMRI time-series across subjects, NeuroImage, Vol 172, pp 740-752, 2018.
+
+Foster B, \textbf{Joshi AA}, Borgese M, Abdelhafez Y, Boutin RD, Chaudhari AJ, WRIST: A WRist Image Segmentation Toolkit for carpal bone delineation from MRI, Computerized Medical Imaging and Graphics 63, pp. 31-40, 2017.
+
+Choi S, Bush AM, Borzage MT, \textbf{Joshi AA}, Mack WJ, Coates TD, Leahy RM, Wood JC, \textit{Hemoglobin and mean platelet volume predicts diffuse T1-MRI white matter volume decrease in sickle cell disease patients}, NeuroImage: Clinical, vol. 15, pp. 239-246. 
+
+Habibi A, Damasio A, Ilari B, Veiga R, \textbf{Joshi AA}, Leahy RM, Haldar JP, Varadarajan D, Bhushan C, Damasio H, Childhood Music Training Induces Change in Micro and Macroscopic Brain Structure: Results from a Longitudinal Study, Cerebral Cortex, pp. 1-12, 2017.
+
+Chong M, Bhushan C, Joshi AA, Choi S, Haldar JP, Shattuck DW, Spreng RN, Leahy RM, Individual parcellation of resting fMRI with a group functional connectivity prior, NeuroImage, 156, pp. 87-100, 2017. 
+
+ZI Wang, B Krishnan, DW Shattuck, RM Leahy, ANV Moosa, E Wyllie, RC Burgess, NB Al-Sharif, \textbf{AA Joshi}, AV Alexopoulos, JC Mosher, U Udayasankar, SE Jones, \textit{Automated MRI Volumetric Analysis in Patients with Rasmussen Syndrome}, American Journal of Neuroradiology, 37(12), 2348-2355, 2016.
+
+Bhushan C, Chong M, Choi S, \textbf{Joshi AA}, Haldar JP, Damasio H, Leahy RM, \textit{Temporal non-local means filtering reveals real-time whole-brain cortical interactions in resting fMRI}, PLoS One, (11) 7, 2016.
+
+Lederman C, \textbf{Joshi AA}, Dinov ID, Van Horn JD, Vese LA, Toga AW,,, \textit{A Unified Variational Volume Registration Method Based on Automatically Learned Brain Structures}, Journal of Mathematical Imaging and Vision 55(2): 179-198, 2016.
+
+\textbf{Joshi AA}, Leahy RM, Badawi RD, Chaudhari AJ, \textit{Registration-Based Morphometry for Shape Analysis of the Bones of the Human Wrist}, IEEE Trans. Med. Imaging 35(2): 416-426, 2016.
+
+Marusak HA, Furman DJ, Kuruvadi N, Shattuck DW, Joshi SH, \textbf{Joshi AA}, Etkin A, Thomason ME, \textit{Amygdala responses to salient social cues vary with oxytocin receptor genotype in youth}, Neuropsychologia, Volume 79, Part A, Pages 1–9, 2015.
+
+Lederman C, \textbf{Joshi A}, Dinov I, Van Horn JD, Vese L and Toga A, \textit{A Unified Variational Volume Registration Method Based on Automatically Learned Brain Structures}, Journal of Mathematical Imaging and Vision 2015 in press.
+
+\textbf{Joshi AA}, Leahy RM, Badawi RD, Chaudhari AJ, \textit{Registration-based Bone Morphometry for Shape Analysis of the Bones of the Human Wrist}, IEEE Trans. Med. Imag. , In press
+
+Marusak HA, Kuruvadi N, Vila AM, Shattuck DW, Joshi S, Joshi AA, Jella PK, Thomason ME, \textit{Interactive effects of BDNF Val66Met genotype and trauma on limbic brain anatomy in childhood}, European Child and Adolescent Psychiatry. in press 2015.
+
+Martinez K, Madsen SK, \textbf{Joshi AA}, Joshi SH, Roman FJ, Villalon-Reina J, Burgaleta M, Karama S, Janssen J, Marinetto E, Desco M, Thompson PM, Colom R, \textit{Reproducibility of brain-cognition relationships using three cortical surface-based protocols: An exhaustive analysis based on cortical thickness}, Human Brain Mapping, Vol 36 (8), pp 3227–3245, 2015.
+
+Wei M, \textbf{Joshi AA}, Zhang M, Mei L, Manis FR, He Q, Beattie RL, Xue G, Shattuck DW, Leahy RM, Xue F, Houston SM, Chen C, Dong Q, Lu ZL, \textit{How age of acquisition influences brain architecture in bilinguals}, Journal of Neurolinguistics, 36, 35-55, 2015. 
+
+Bhushan C, Haldar JP, Choi S, \textbf{Joshi AA}, Shattuck DW, Leahy RM, \textit{Co-registration and distortion correction of diffusion and anatomical images based on inverse contrast normalization}, NeuroImage, 115, pp. 269-280.
+
+Shi J, Collignon O, Xu L, Wang G, Kang Y, Lepore F, Lao Y, Joshi AA, Lepore N, Wang Y, \textit{Impact of early and late visual deprivation on the structure of the corpus callosum: A study Combining Thickness profile with Surface Tensor-based morphometry}, Journal Neuroinformatics, 2015 Jul;13(3):321-36.
+
+Chaudhari AJ, Leahy RM, Wisen BL, Lane NE, Badawi RD and \textbf{Joshi AA}, \textit{Global point signature for shape analysis of carpal bones}, Physics in Medicine and Biology,  Phys. Med. Biol. 59 961, 2014
+
+Santos J., Chaudhari AJ, \textbf{Joshi AA}, Ferrero A., Yang K., Boone JM, Badawi RD, \textit{Non-Rigid registration of serial dedicated breast CT, longitudinal dedicated breast CT and PET/CT images using the diffeomorphic demons method}, Physica Medica,30 (6), 713-717, 2014.
+
+Prasad G, \textbf{Joshi A}, Feng A, Toga AW, Thompson PM, Terzopoulos D, \textit{Skull-Stripping with Machine Learning Deformable Organisms},  Journal of Neuroscience Methods.  236, 114-124 2014.
+
+Habibi A, Ilari B, Crimi K, Metke M, Kaplan J, \textbf{Joshi A}, Leahy R, Shattuck D, Choi SY, Ficek B, Haldar J, Damasio A, Damasio H, \textit{An Equal Start: Absence of Group Differences in Cognitive, Social and Neural Measures Prior to Music or Sports Training in Children},  Frontiers in Human Neuroscience, 2014.
+
+Niv S, Ashrafulla S, Tuvblad C, \textbf{Joshi A}, Raine A, Leahy R, Baker LA, \textit{Childhood EEG frontal alpha power as a predictor of adolescent antisocial behavior: A twin heritability study}, Biol Psychol. 2014 Nov 29. pii: S0301-0511(14)00251-8.
+
+Shi J, Collignon O, Xu L, Wang G, Kang Y, Lepore F, Lao Y, \textbf{Joshi A}, Lepore N, Wang Y,\textit{Impact of early and late visual deprivation on the structure of the corpus callosum: A study Combining Thickness profile with Surface Tensor-based morphometry}, Journal Neuroinformatics, 2015 1-16.
+
+Bhushan C, \textbf{Joshi AA}, Leahy RM, Haldar JP, \textit{Improved B0-distortion correction in diffusion MRI using interlaced 1-space sampling and constrained reconstruction}, Mag. Res. Med 72(5) 1218-1232 2014.
+
+Ashrafulla S, Haldar JP, \textbf{Joshi AA}, Leahy RM, \textit{Canonical Granger Causality between Regions of Interest}, NeuroImage, 83, 189–199. 2013.
+
+\textbf{Joshi AA}, Hu H, Leahy RM, Toga AW, Nayak K, \textit{Intra-subject registration and atlas-based segmentation of 3D human abdominal fat-water MRI}, Journal of Magnetic Resonance in Imaging,  37(2):423-430. February 2013.
+
+Yang Y, Raine A, \textbf{Joshi AA}, Joshi S, Chang YT, Schug RA, Wheland D, Leahy R, Narr KL, \textit{Frontal information flow and connectivity in psychopathy}, Br J Psychiatry. 2012, Nov 201(5):408-9.
+
+Yang Y, \textbf{Joshi AA}, Joshi SH, Baker LA, Narr KL, Raine A, Thompson PM, Damasio H, \textit{Genetic and Environmental Influences on Cortical Thickness among 14-Year-Old Twins}, NeuroReport, 2012 Aug 22;23(12):702-6.
+
+Joshi SH, Cabeen RP, \textbf{Joshi AA}, Sun B, Dinov I, Narr KL, Toga AW, Woods RP, \textit{Diffeomorphic Sulcal Mapping on the Cortex}, IEEE Trans. on Med Imaging,  2012 Jun;31(6):1195-212.
+
+Thomason ME, Dennis EL, \textbf{Joshi AA}, Joshi SH, Dinov ID, Chang C, Henry ML, Johnson RF, Thompson PM, Toga AW, Glover GH, Van Horn JD, Gotlib IH, \textit{Resting-state fMRI can reliably map neural networks in children}, NeuroImage 2011 Vol 55(1), pp. 165-75.
+
+Lederman C, \textbf{Joshi AA}, Dinov I, Vese L, Toga AW, Van Horn JD \textit{The generation of tetrahedral mesh models for neuroanatomical MRI}, NeuroImage. 2011 Vol 55(1), pp. 153-164.  \textbf{[Featured on the journal cover page. Featured tool/resource on www.nitrc.org]}
+
+\textbf{Joshi AA}, Lepore N,Joshi SH, Lee AD, Barysheva M, Stein JL, McMahon KL, Johnson K, de Zubicaray GI, Martin NG, Wright MJ, Toga AW, Thompson PM, \textit{The contribution of genes to cortical thickness and volume}, NeuroReport. 2011  22(3):101-105.
+
+Bernstein LE, Jiang J, Pantazis D, Lu ZL, \textbf{Joshi AA}, \textit{Visual phonetic processing localized using speech and nonspeech face gestures in video and point-light displays}, Hum Brain Mapp. 2010; In press.
+
+Dutta J, Ahn S, \textbf{Joshi AA}, Leahy RM, \textit{Illumination Pattern Optimization for Fluorescence Tomography}, Physics in Medicine and Biology. 2010; 55(10): 2961-82.
+
+Chaudhari AJ, Bowen SL, Burkett GW, Packard NJ, Godinez F, \textbf{Joshi AA}, Naguwa SM, Shelton DK, Hunter JC, Boone JM, Buonocore MH, Badawi RD. \textit{High-resolution (18)F-FDG PET with MRI for monitoring response to treatment in rheumatoid arthritis}, Eur J Nucl Med Mol Imaging. 2010 Jan 30.
+
+\textbf{Joshi AA}, Pantazis D, Li Q, Damasio H, Shattuck DW, Toga AW, Leahy RM, \textit{Sulcal set optimization for cortical surface registration}, Neuroimage. 2010; 50(3):950-9.
+
+\textbf{Joshi AA}, Chaudhari AJ,  Li C, Dutta J, Cherry SR, Shattuck DW, Toga AW and Leahy RM \textit{DigiWarp: a method for deformable mouse atlas warping to surface topographic data}, Phys Med Biol. 2010; 55(20):6197-214.
+
+Pantazis D, \textbf{Joshi AA}, Jiang J, Shattuck DW, Bernstein LE, Damasio H, Leahy RM, \textit{Comparison of landmark-based and automatic methods for cortical surface registration}, Neuroimage. 2010; 49(3):2479-93.
+
+Chaudhari AJ, \textbf{Joshi AA}, Bowen SL, Leahy RM, Cherry SR and Badwai RD, \textit{Spatial distortion correction and crystal identification for position-sensitive avalanche photodiode-based PET scanners}, IEEE Trans Nucl Sci. 2009; 56(3):549-556.
+
+Shattuck DW, \textbf{Joshi AA}, Pantazis D, Kan E, Dutton RA, Sowell ER, Thompson PM, Toga AW, Leahy RM, \textit{Semi-automated method for delineation of landmarks on models of the cerebral cortex}, J Neurosci Methods. 2009; 178(2):385-92.
+
+Chaudhari AJ, \textbf{Joshi AA}, Bowen SL, Leahy RM, Cherry SR and Badwai RD, \textit{Crystal identification in Positron Emission Tomography using nonrigid registration to a Fourier-based template}, Phys Med Biol. 2008; 53(18):5011-27. \textbf{[Featured article on medical physics web, Featured in Phys Med Biol.]}
+
+\textbf{Joshi AA}, Shattuck DW, Thompson PM and Leahy RM, \textit{A Parameterization-based Numerical Method for Isotropic and Anisotropic Diffusion Smoothing on Non-Flat Surfaces}, IEEE Trans Image Process. 2009; 18(6):1358-65.
+
+\textbf{Joshi AA}, Shattuck DW, Thompson PM and Leahy RM \textit{Surface-constrained volumetric brain registration using harmonic mappings}, IEEE Trans Med Imaging. 2007; 26(12):1657-69.
+
+\subsection{Conference Proceedings}
+
+\text{Joshi AA}, Li J, Chong M, Akrami H, Leahy RM, rfDemons: Resting fMRI-Based Cortical Surface Registration Using the BrainSync Transform. MICCAI (3) 2018: 198-205
+
+\textbf{Joshi AA}, Bhushan C, Salloum R, Wisnowski JL, Shattuck DW, Leahy RM, Using the Anisotropic Laplace Equation to Compute Cortical Thickness. MICCAI (3) 2018: 549-556. 
+
+Li J, Choi S, \textbf{Joshi AA}, Wisnowski JL, Leahy RM: Global PDF-based temporal non-local means filtering reveals individual differences in brain connectivity,  ISBI 2018: 15-19.
+
+\textbf{Joshi AA}, Choi S, Sonkar G, Chong M,  Gonzalez-Martinez J, Nair D, Shattuck DW,  Damasio H, Leahy RM, A Whole Brain Atlas with Sub-parcellation of Cortical Gyri using Resting fMRI, SPIE Medical Imaging, 101330O-101330O-9, 2017.
+
+Rajagopal G, Joshi AA, Leahy RM, An Algorithm for Automatic Parameter Adjustment for Brain Extraction in BrainSuite,  SPIE Medical Imaging 101330K-101330K-10, 2017.
+
+\textbf{Joshi AA}, Chong M, Leahy RM, BrainSync: An Orthogonal Transformation for Synchronization of fMRI Data Across Subjects, Proc. MICCAI 2017, pp. 486-494.
+
+Awate SP, Leahy RM, \textbf{Joshi AA}, Kernel Methods for Riemannian Analysis of Robust Descriptors of the Cerebral Cortex, Proc. IPMI 2017, pp. 28-40.
+
+Shishegar R, \textbf{Joshi AA}, Tolcos M,  Walker DW, Johnston LA, Automatic segmentation of fetal brain using diffusion-weighted imaging cues, Proc. ISBI 2017, pp. 804-807.
+
+S Choi, AM Bush, M Borzage, A Joshi, TD Coates, R Leahy, JC Wood, \textit{Hemoglobin Level and Platelet Size Predicts Grey and White Matter Volume Loss Measured By Tensor Based Morphology in Sickle Cell Disease}, Blood 2016 128:2481.
+
+Soyoung Choi, Adam M Bush, Matt Borzage, Anand Joshi, Thomas D Coates, Richard Leahy, John C Wood, \textit{Regional Susceptibility to Chronic Anemia in WM Microstructure Using Diffusion Tensor Imaging}, Blood, 128(22), 3640-3640. 
+
+Suyash P Awate, Richard M Leahy, Anand A Joshi, \textit{Riemannian statistical analysis of cortical geometry with robustness to partial homology and misalignment}, International Conference on Medical Image Computing and Computer-Assisted Intervention, 237-246, 2016.
+
+Abhijit J Chaudhari, Brent H Foster, Dylan A Noblett, Robert D Boutin, Robert M Szabo, Christopher O Bayne, Richard M Leahy, Nancy E Lane, Anand A Joshi, \textit{Sex Differences in Morphometry of the Anatomical Structures of the First Carpometacarpal Joint}, Journal of Womens Health, 25(9), 960-960, 2016.
+
+Wang I, Krishnan B, Shattuck D, \textbf{Joshi A}, Leahy R, Alexopoulos A, Burgess R, Mosher J, Udayasankar U, Moosa A, Wyllie, E, Jones S. \textit{Automated MRI Volumetric Analysis of Rasmussen's Encephalitis}, submited American Epilepsi Society Annual Meeting 2015.
+
+Chong M, \textbf{Joshi AA}, Haldar J, DuPre E, Luh WM, Shattuck DW, Spreng RN, Leahy RM, \textit{A Group Approach to Functional Cortical Parcellation from Resting-State fMRI}, OHBM 2015.
+
+Varadarajan D, Wamg IZ, \textbf{Joshi A}, Shattuck D, Jones S, Leahy R. \textit{Detecting Focal Cortical Dysplasia using Population-based Models of Cortical Thickness},  OHBM 2015
+
+Choi S, Bush A, Borzage M, \textbf{Joshi AA}, Rajagopalan V, Coloigner J, Lepore N, Coates TD and Wood JC, \textit{Diffuse T1-MRI White Matter Volume Decrease in Patients with Sickle Cell Disease}, OHBM 2015.
+
+\textbf{Joshi AA}, Salloum R, Bhushan C, Leahy RM, \textit{Measuring Asymmetric Connectivity in the Default Mode Network}, OHBM 2015.
+
+\textbf{Joshi AA}, Salloum R, Bhushan C, Leahy RM, \textit{Measuring Asymmetric Interactions in Resting State Brain Networks, Information Processing in Medical Imaging}, 2015, 399-410.
+
+Jones S, Wang I, Alexopoulos A, Al-Sharif N, Burgess R, \textbf{Joshi A}, Krishnan B, Leahy R, Mosher J, Udayasankar U, Shattuck D, \textit{Automated Quantitative Assessment of Rasmussen's Encephalitis}, ASNR 2015.
+
+Li H, El Fakhri G, \textbf{Joshi A}, Li Q, \textit{An ADMM Reconstruction Algorithm for Joint Registration and Attenuation Correction in Transmission-Less Gated TOF PET}, IEEE Medical Imaging Conference, 2014.
+
+
+Joshi S, Woods R, \textbf{Joshi A}, Fears S, Al-Sharif N, Leahy R, Shattuck D, \textit{A statistical toolbox for BrainSuite}, OHBM 2014.
+
+\textbf{Joshi A}, Bhushan C, Shattuck D, Leahy R, \textit{Estimation of cortical thickness from T1-weighted MRI images using tissue fractions}, OHBM 2014.
+
+Martinez K, \textbf{Joshi A}, Madsen S, Joshi S, Karama S, Roman F, Villalon-Reina J, Burgaleta M, Thompson P, Colom R, \textit{Reproducibility of Brain-Cognition Relationships Using Different Cortical Surface-Based Analysis Protocols}, Proc. ISBI 2014, in press.
+
+Eschenburg K, Villalon-Reina J, Jahanshad N, Nir T, Daianu M, \textbf{Joshi A}, Leonardo C, de Bode C, Bookheimer S, Salamon N, Thompson P, \textit{Analysis of Structural Brain Connectivity in 6 Cases of Hemispherectomy},  Proc. ISBI 2014., in press.
+
+
+Bai B, \textbf{Joshi AA}, Longo VD, Conti PS and Leahy RM, \textit{A Registration-based Segmentation Method with Application to Adiposity Analysis of Mice MicroCT Images}, SPIE Medical Imaging 2013, in press.
+
+\textbf{Joshi AA}, Ashrafulla S, Shattuck DW, Damasio H, Leahy RM, \textit{Cortical Shape Analysis using the Anisotropic Global Point Signature}, MICCAI, MFCA workshop, 2013.
+ 
+\textbf{Joshi AA}, Leahy RM, Badawi R, Chaudhari AJ, \textit{Morphometry for Early Monitoring of Treatment Response in Theumatoid Arthritis}, Proc IEEE Int Symp Biomed Imaging. 2013, 121–124. 
+
+Martinez K, Villalon J, Kessel D, \textbf{Joshi AA}, Pineda JA, Jahanshad N, Nir T, Eschenburg K, Roman FJ, Burgaleta M, Solana AB, Quiroga MA, Colom R, Thompson PM, \textit{Explorator factor analysis of brain networks reveals sub-networks related to cognitive performance}, Proc. ISBI 2013, 608-611.
+
+Bhushan C, Haldar J, \textbf{Joshi AA}, Leahy RM, \textit{Correcting Susceptibility-Induced Distortion in Diffusion-Weighted MRI using Constrained Nonrigid Registration}, APSIPA 2012. 
+
+\textbf{Joshi AA}, Ashrafulla S, Shattuck DW, Damasio H, Leahy RM, \textit{An Invariant Shape Representation using the Anisotropic Helmholtz Equation}, Proc. MICCAI (3) 2012: 607-614.
+
+Somayajula S, \textbf{Joshi AA}, Leahy RM, \textit{Non-rigid Image Registration Using Gaussian Mixture Models}, Proc. WBIR, LNCS Springer 2012, 286-295. 
+
+\textbf{Joshi AA}, Shattuck DW and Leahy RM, \textit{A Fast and Accurate Method for Automated Cortical Surface Registration and Labeling}, Proc. WBIR LNCS Springer 2012, 180-189.
+
+\textbf{Joshi AA}, Shattuck D, Damasio H, Leahy RM, \textit{Geodesic curvature flow on surfaces for automatic sulcal delineation}, Proc IEEE ISBI 2012, 430-433.
+
+Ashrafulla S, Haldar J, \textbf{Joshi AA}, Leahy RM, \textit{Canonical Granger causality applied to functional brain data}, Proc. IEEE ISBI 2012, 1751-1754.
+
+Joshi SH, \textbf{Joshi AA}, Toga AW, McMahon K, de Zubicaray G, Martin N, Wright M, Thompson PM, \textit{Genetic influences on sulcal patterns of the brain}, Proc. IEEE ISBI 2012, 414-417.
+
+Wheland D, \textbf{Joshi AA}, McMahon K, Hansell N, Martin N, Wright M, Thompson P, Shattuck DW, Leahy RM, \textit{Robust identification of partial-correlation based networks with applications to cortical thickness data}, Proc IEEE ISBI 2012, 1551-1554.
+
+Prasad  G, \textbf{Joshi A}, Feng A, Barysheva M, McMahon K, de Zubicaray G, Martin N, Wright M, Toga AW, Terzopoulos D and Thompson PM, \textit{Deformable Organisms and Error Learning for Brain Segmentation}, MICCAI MFCA 2011, 135-147.
+
+\textbf{Joshi AA}, Joshi SH, Thomason M, Dinov ID, Toga AW, \textit{Evaluation of Connectivity Measures and Anatomical Features for Statistical Brain Networks}, Proc. IEEE ISBI 2011, Accepted. 
+
+Prasad G, \textbf{Joshi AA}, Thompson PM, Toga AW, Shattuck DW, Terzopoulos D, \textit{Skull-stripping with Deformable Organism}, Proc. IEEE ISBI 2011, 1662-1665. 
+
+Jahanshad N, Aganj I, Lenglet C, \textbf{Joshi AA}, Jin Y, Barysheva M, McMahon K, de Zubicaray G, Martin N, Wright M, Toga A, Sapiro G, Thompson P, \textit{Sex Differences in the Human Connectome: 4-Tesla High Angular Resolution Diffusion Imaging (HARDI) Tractography in 234 Young Adult Twins}, Proc. IEEE ISBI 2011, 939-943.
+
+Villalon J, \textbf{Joshi AA}, Toga AW, Thompson PM, \textit{Comparison of Volumetric Registration Algorithms for Tensor-Based Morphometry}, Proc. IEEE ISBI 2011, 1536-1541. 
+
+Joshi SH, Cabeen R, Sun B, \textbf{Joshi AA}, Gutman B, Zamanyan A, Chakrapani S, Dinov I, Woods RP, Toga AW, \textit{Cortical Sulcal Atlas Construction using a Diffeomorphic Mapping Approach}, Proc. of MICCAI. 2010; 13(Pt 1):357-366.
+
+Joshi SH, Cabeen R, \textbf{Joshi AA}, Narr K, Toga AW, \textit{Diffeomorphic Sulcal Shape Analysis for Cortical Surface Registration}, Proc. CVPR 2010; 475-482.
+
+Lederman C, \textbf{Joshi AA}, Van Horn JD, Vese L, Toga A, \textit{Robust Tetrahedral Mesh Generation for Medical Images using Active Surfaces}, Proc. ISBI 2010; 436-439.
+
+\textbf{Joshi AA}, Joshi SH, Dinov I, Shattuck DW, Leahy RM, Toga AW, \textit{Anatomical Structural Network Analysis of Human Brain using Partial Correlation of Gray Matter Volumes}, Proc. of ISBI. 2010; 844-847.
+
+\textbf{Joshi AA}, Lepore N, Joshi SH, Lee AD, Barysheva M, de Zubicaray GI, Wright MJ, McMahon KL, Toga AW, Thompson PM, \textit{Genetic Analysis of Cortical Thickness in 372 twins}, Proc. ISBI 2010; 101-104.
+
+\textbf{Joshi AA}, Joshi SH, Leahy RM, Shattuck DW, Dinov I, Toga AW, \textit{Bayesian approach for network modeling of brain structural features}, Proc. SPIE. 2010; Vol. 7626, 762607.
+
+Dutta J, Ahn S, \textbf{Joshi AA} and Leahy RM, \textit{Optimal Illumination Patterns for Fluorescence Tomography}, Proc. of IEEE ISBI 2009, 1275-1278.
+
+\textbf{Joshi AA}, Chaudhari AJ, Shattuck DW, Dutta J, Leahy RM and Toga AW, \textit{Posture Matching and Elastic Registration of a Mouse Atlas to Surface Topography Range Data}, Proc. of ISBI 2009, 366-369.
+
+\textbf{Joshi AA}, Leahy RM, Toga AW, Shattuck DW, \textit{A Framework for Brain Registration via Simultaneous Surface and Volume Flow}, Inf Process Med Imaging. 2009; 21:576-88.
+
+\textbf{Joshi AA}, Pantazis D, Damasio H, Li Q, Shattuck DW, Bernstein LE and Leahy RM, \textit{Optimization of Landmark Selection for Cortical Surface Registration}, CVPR 2009, 699-706. 
+
+Chaudhari AJ, \textbf{Joshi AA}, Yibao Wu, Leahy RM, Cherry SR and Badawi RD, \textit{Spatial distortion correction and crystal identification for position-sensitive avalanche photodiode-based PET scanners}, Nuclear Science Symposium Conference. 2009; 19-25,5045-5052.
+
+Somayajula S., \textbf{Joshi AA}  and Leahy RM, \textit{Mutual Information Based Non-Rigid Mouse Registration Using a  Scale-space Approach}, Proc. of ISBI. 2008; pp 1147-1150. 
+
+\textbf{Joshi AA}, Shattuck DW, Thompson PM and Leahy RM, \textit{Brain Image Registration using Cortically Constrained Harmonic Mappings}, Inf Process Med Imaging. 2007; 4584,359-371.
+
+Eckstein I, \textbf{Joshi AA}, Leahy RM. Deshbrun M. \textit{Generalized Surface Flows for Deformable Registration and Cortical Matching}, Proc. of MICCAI. 2007; 692-700.
+
+\textbf{Joshi AA}, Shattuck DW, Thompson PM and Richard M. Leahy \textit{Simultaneous Surface and Volumetric Brain Registration Using Harmonic Maps}, Proc. SPIE, Vol. 6498, 2007; 649816.
+
+Chaudhari AJ , \textbf{Joshi AA}, Darvas F and Leahy RM, \textit{A method for atlas-based volumetric registration with surface constraints for Optical Bioluminescence Tomography in small animal imaging}, Proc. SPIE. 2007; 6510; 651024.
+
+\textbf{Joshi AA}, Shattuck DW, Thompson PM and Richard M. Leahy (2007) \textit{A finite element method for elastic parameterization and alignment of cortical surfaces using sulcal constraints, Biomedical Imaging}, Proc. of ISBI. 2007; 640-643. 
+
+\textbf{Joshi AA}, Shattuck DW, Thompson PM and Leahy RM, \textit{Registration of cortical surfaces using sulcal landmarks for group analysis of MEG data}, International Congress Series Volume 1300, New Frontiers in Biomagnetism. Proceedings of the 15th International Conference on Biomagnetism. 2007; 229-232.
+
+\textbf{Joshi AA}, Shattuck DW, Thompson PM and Leahy RM, \textit{A Framework for Registration, Statistical Characterization and Classification of Cortically Constrained Functional Imaging Data}, Inf Process Med Imaging. 2005;  186-196,
+
+\textbf{Joshi AA}, Shattuck DW, Thompson PM and Leahy RM, \textit{Cortical surface parameterization by p-harmonic energy minimization}, Proc. of ISBI. 2004; 428-431.
+
+\subsection{Conference Abstracts}
+
+Akrami H, \textbf{Joshi AA}, Li J, Leahy RM, Average template for comparison of resting fMRI based on group synchronization of their time series, OHBM 2018.
+
+\textbf{Joshi AA}, McCoy D, Chong M, Li J, Choi S, Shattuck DW, Leahy RM, BFP: A BrainSuite fMRI Pipeline, OHBM 2018.
+
+Li J, Wisnowski JL, \textbf{Joshi AA}, Leahy RM, Identifying Brain Networks Using Tensor Decomposition of Multiple Subject Asynchronous Task fMRI, OHBM 2018.
+
+Chong M, \textbf{Joshi AA}, Leahy RM, A New Feature Reduction Method for Improving High Dimensional Brain Connectivity Estimates, OHBM 2018.
+
+Chaudhari AJ, Foster B, Szabo RM, Boutin RD, Bayne CO, Boone JM, Ma KL, Badawi RD, Lane NE, Leahy RM, Crisco JJ, \textbf{Joshi AA}, Probabilistic Atlas of the First Carpometacarpal Joint, Proceedings of the 3rd ITOW, 2018.
+
+Choi S, O'Neil S, \textbf{Joshi AA}, Bush A, Borzage M, Coloigner J, Coates T, Wood J, Leahy RM, The Anemic Brain: Hemoglobin Level Predicts Brain Volume in Watershed areas and Cognitive function, OHBM 2017.
+
+\textbf{Joshi A}, Choi S, Chong M, Sonkar G, Gonzalez-Martinez G, Nair D, Shattuck D,  Damasio H, Leahy RM, USCBrain Atlas: A Volumetric and Surface Atlas Delineated by Anatomical and
+Functional MRI, OHBM 2017.
+
+Li J, Choi S, Leahy RM, Global PDF-based Non-Local means Filtering of Resting fMRI data, OHBM 2017.
+
+\textbf{Joshi AA}, Chong M, Leahy RM, Synchronization of fMRI Data Across Subjects and Scans by Orthogonal Transformation, OHBM 2017.
+
+Joshi S, Kim Y, \textbf{Joshi A}, Leahy RM,  Shattuck D, Reproducible TBM and ROI Analyses Using the BrainSuite Statistics Toolbox (BSS), OHBM 2017.
+
+Chaudhari AJ, \textbf{Joshi AA}, Leahy RM, Wise BL, Lane NE, Badawi RD and Buonocore MH, \textit{Thumb carpometacarpal joint motion and bone shape differences by sex}, Proceedings of the 1st International Thumb Osteoarthritis Workshop, Newport, Rhode Island, USA October 25-26, 2013.
+
+Chaudhari AJ, \textbf{Joshi AA}, Leahy RM, Lane NE, Badawi RD and Buonocore MH, \textit{Sex-based imaging biomarkers of carpal bone motion and shape in Hand Osteoarthritis}, NIH Office of Research on Women's Health Tenth Annual Interdisciplinary Women's Health Research Symposium, Bethesda, MD, Oct 24-25, 2013.
+
+Beroukhim D, Konersman M, Chong M, \textbf{Joshi AA}, Bhusan C, Shattuck DW, Haldar JP, Leahy RM, Winstein CJ, \textit{Effects of rehbilitation post-stroke: DTI analysis of corticospinal tract characteristics using BrainSuite13}, Society of Neuroscience 2013.
+
+Aydore S, Ashrafulla S, \textbf{Joshi AA}, Leahy RM, \textit{A Measure of Connectivity in the Presence of Crosstalk}, IEEE ASILOMAR Conference on Signals, Systems and Computers, 2013.
+
+Xu L, Collignon O, Wang G, Kang Y, Lepore F, Shi J, Lao Y, \textit{Joshi AA}, Lepore N, Wang Y, \textit{Combining Thickness Information with Surface Tensor-based Morphometry for the 3D Statistical Analysis of the Corpus Callosum}, MICCAI, MFCA workshop 2013.
+
+Choi S, Bhushan C, \textit{Joshi AA}, Raphel K, Tranel D, Shattuck DW, Haldar JP, Leahy RM, Damasio H, Wisnowski JL, \textit{Altered orbitofrontal tissue microstructure in patients with chronic anterior temporal lobe lesions}, OHBM 2013.
+
+Shattuck DW, \textit{Joshi AA}, Haldar J, Bhushan C, Choi S, Krause A, Wisnowski J, Damasio H, Toga A, Leahy RM, \textit{New BrainSuite13 Tools for Image Segmentation, Registration , Connectivity Analysis and Visualization}, OHBM 2013.
+
+\textit{Joshi AA}, Ashrafulla S, Shattuck DW, Damasio H, Leahy RM, \textit{Automated Analysis of the Shape of Sulcal Curves using the Anisotropic Helmholtz Equation}, OHBM 2013.
+
+Eschenburg K, Villalon-Reina J, Nir T, Joshi AA, Terashima K, Jones M, Salamon N, de Bode S, Thompson PM, \textit{A Preliminary Graph Theory Analysis of 5 Hemispherectomized Children}, OHBM 2013.
+
+Shattuck DW, Joshi AA, Haldar JP, Bhushan C, Choi S, Krause AC, Wisnowski JL, Toga AW and Leahy RM, \textit{Tools for Brain Image Segmentation, Registration, and Connectivity Analysis}, ISMRM 2013. 
+
+Bhushan C, \textbf{Joshi AA}, Leahy RM, Justin Haldar, Accelerating Data Acquisition for Reversed-Gradient Distortion Correction in Diffusion MRI: A Constrained Reconstruction Approach, ISMRM 2013. [Magna Cum Laude Merit Award, Trainee Educational Stipend].
+
+Choi S, \textbf{Joshi AA}, Chitresh Bhushan, David W Shattuck, Richard M Leahy, Hanna Damasio, Ashok Panigrahy and Jessica L Wisnowski, A Multimodal Investigation of Neuronal/Axonal Integrity Using Structural T1-weighted Imaging, Diffusion Tensor Imaging, and H1 MR Spectroscopy, ISMRM 2013.
+
+Yang Y, Wang P, Baker LA, Damasio H, \textbf{Joshi AA}, Joshi SH, Narr KL, Raine A and Thompson PM, \textit{Abnormal cortical thickness associates with psychopathic traits in adolescents}, Society for Neuroscience Annual Meeting October 13-17, 2012, in New Orleans, LA.
+
+Chaudhari AJ, \textbf{Joshi AA}, Leahy RM, Boutin RD, Wise RL, Lane NE, Badawi RD, Buonocore MH, \textit{Sex-based imaging biomarkers of function in Hand Osteoarthritis}, BIRCWH Annual Meeting 2013.
+
+Beroukhim D, Konersman M, Chong M, \textit{Joshi AA}, Bhusan C, Shattuck DW, Haldar JP, Leahy RM, Winstein CJ, \textit{Effects of rehabilitation post-stroke: DTI analysis of corticospinal tract characteristics using BrainSuite13}, Society for Neuroscience 2013.
+
+Ma K, Qin Y, Liu Y, Reddy N, \textit{Joshi AA}, Amezcua L, Lerner A, Shiroishi M, Liu B, \textit{Knowledge discovery of potential disease patterns in multiple sclerosis lesions across imaging studies of diverse ethnicities}, RSNA 2013.
+
+Ashrafulla S, Haldar JP, \textbf{Joshi AA}, Leahy RM, \textit{Canonical Granger Causality}, Biomag 2012.
+
+Martinez K, Roman FJ, \textbf{Joshi AA}, Abad FJ, Villalon J, Burgaleta M, Privado J, Escorial S, Shih PC, Quiroga MA, Alvarez-Linera J, Karama S, Haier R, Thompson PM and Colom R, \textit{Imaging-derived gray matter measurements of the cerebral cortex and intelligence: A latent variable analysis of the P-FIT model}, ISIR 2012.
+
+\textbf{Joshi AA}, Shattuck DW and Leahy RM, \textit{Refinement of Automated Cortical Surface Registration and Labelling using Gradient Curvature Flow}, Organization for Human Brain Mapping, Beijing, China, June 10-14, 2012.
+
+Villalon Reina J, Jahanshad N, \textbf{Joshi AA}, McMahon KL, de Zubicaray GI, Wright MJ, Toga AW, Leahy RM, Thompson PM, \textit{How do cortical thickness profiles depend on thalamic connectivity?}, Organization for Human Brain Mapping, Beijing, China, June 10-14, 2012.
+
+Joshi SH, \textit{Joshi AA}, Toga AW, McMahon KL, de Zubicaray GI, Martin NG, Wright MJ and Thompson PM. \textit{Sulcal Shape Heritability on the Cortex}, Organization for Human Brain Mapping, Beijing, China, June 10-14, 2012.
+
+Yang Y, Wang P, Baker LA, \textbf{Joshi AA}, Joshi SH, Narr KL, Raine A and Thompson PM, \textit{Thinner Temporal Cortex Identified in Adolescents with Increasing Psychopathy over Time}, Organization for Human Brain Mapping, Beijing, China, June 10-14, 2012.
+
+Yang Y, Wang P, Baker LA, \textit{Joshi AA}, Joshi S, Narr KL, Raine A and Thompson PM, \textit{Variations in Frontal and Striatal Morphology Associate with Psychopathic Traits in Adolescents}, Organization for Human Brain Mapping, Beijing, China June 10-14, 2012.
+
+Zingg B, Hintiryan H, Gou L, Lee D, Ng Q, \textbf{Joshi A}, Yamashita S, Bota M, Swanson L, Toga A, and Dong H, \textit{Toward a Mouse Connectome: A High-throughput Approach for the Characterization of Long-range Connectivity in the Mouse Brain}. Janelia farm Conference, 2011.
+
+Lee D, Ng Q, Yamashita S, \textbf{Joshi AA}, Lee B, C Mena, Toga, AW and Dong H, \textit{iConnectome: An informatics infrastructure for the processing, visualization, and analysis for the mouse connectome project}. SFN 2011.
+
+B Zingg, H Hintiryan, L Gou, D Lee, Q Ng, \textbf{A Joshi}, S Yamashita, M. Bota, L Swanson, A Toga, and H Dong, \textit{Toward a Mouse Connectome: A High-throughput Approach for the Characterization of Long-range Connectivity in the Mouse Brain}. SFN 2011.
+
+Santos J, \textit{Joshi A}, Chaudhari A, Badawi R, \textit{Assessment of the advanced 3D registration for the spatial normalization of cross-sectional and longitudinal high-resolution breast PET/CT images}, BCI 2011, hosted by SNM center for molecular imaging  2011.
+
+Zingg B, Gou L, Hintiryan H, Lee D, \textbf{Joshi AA}, Yamashita S, Ng Q, Lee BW, Mena C, Swanson LW, Toga AW and Dong H, \textit{Toward a Mouse Connectome: A High-throughput Approach for the Characterization of Long-range Connectivity in the Mouse Brain}. UCLA Neurology science day 2011. [Marr Prize]
+
+Lederman C, \textit{Joshi AA}, Dinov ID, Chan K, Vese L, Toga A, van Horn J, \textit{A Unified Variational Approach to Structural Brain Registration}, OHBM 2011.
+
+\textbf{Joshi AA}, Carl Lederman, Ivo Dinov, Shantanu Joshi, Arthur Toga, John Van Horn, \textit{Tetrahedral Mesh-based Morphometry of Brain Surfaces and Volumes}, OHBM 2011.
+
+
+Joshi SH, Cabeen R, \textbf{Joshi AA}, Narr K, Toga AW, Diffeomorphic Sulcal Pattern Matching for Cortical Surface Registration OHBM 2010.
+
+Thomason ME, Dennis EL, \textbf{Joshi AA}, Joshi SH, Dinov ID, Henry ML, Johnson RF, Thompson PM, Toga AW, Gotlib IH, Resting Functional Connectivity: Pattern reliability and longitudinal changes in childhood, OHBM 2010.
+
+Lepore N, \textbf{Joshi AA}, Brun C, Toga AW, Thompson PM, Combined Surface/Volume Fluid Registration-Performance Evaluation using Brain MRIs from 342 Adults, OHBM 2010.
+
+\textbf{Joshi AA}, Lepore N, Joshi SH, Brun C, Toga AW, The Contribution of Genes to  Cortical Thickness and Volume in Young Adults, OHBM 2010.
+
+Brun C, \textbf{Joshi AA}, Lepore N, Joshi SH, Lee A, Thompson PM, Cortical measures and heritability in 326 identical and fraternal twins, OHBM 2010.
+
+\textbf{Joshi AA}, Hu HH, Goran MI, Leahy RM, Toga AW, Nayak KS, A Software Tool for Volume Registration and Atlas-Based Segmentation of Human Fat-Water MRI Data in Longitudinal Studies, ISMRM 2010.
+
+Pantazis D, \textbf{Joshi AA}, Jintao J, Shattuck DW, Bernstein LE, Damasio H, and Leahy RM, \textit{Evaluating the accuracy of cortical registration using landmark-based and automatic methods}, OHBM 2009.
+
+Chaudhari AJ, \textbf{Joshi AA}, Toga AW, Leahy RM, Cherry SR and Badawi RD, \textit{Atlas-based attenuation correction for small animal PET/MRI scanners}, IEEE Medical Imaging Conference, 2009.
+
+Li Q., Shin T, \textbf{Joshi AA} and Nayak K, \textit{A Fast Simultaneous Estimation of MRI Image and Deformation Map in Cardiac Imaging}, ISMRM 2009. 
+
+Vidal CN, Fox GR, Ballinger AM, Allen J, Baker L, Raine A, Bruss J, \textbf{Joshi AA}, Leahy RM, Pantazis D, Shattuck DW, Zhuang J, Damasio H, \textit{Genetic Influences on Language Cortices: Preliminary Results from a Volumetric Twin Study}, The Society for Neuroscience annual meeting, San Diego, Nov 2-7, 2007.
+
+Li Q., \textbf{Joshi AA} and Leahy RM, \textit{A Registration Framework based on Harmonic Mapping for Inter-subject Comparisons in Small Animal {PET/CT} Imaging}, Nuclear Science Symposium and Medical Imaging Conference, 2007.
+
+Shattuck DW, \textbf{Joshi AA}, Leahy RM and Toga AW \textit{Automated Parameterized Cortical Surface Models from MRI}, Human Brain Mapping June 2005, Toronto, CA. (2005).
+
+\textbf{Joshi AA}, Shattuck DW, Thompson PM and Leahy RM \textit{Thin Plate Spline Registration in the Intrinsic Geometry of the Cortical Surface},  Human Brain Mapping, Toronto, CA. (2005).
+
+\textbf{Joshi AA} and Leahy RM, \textit{Unique conformal maps},  Image analysis workshop at Los Alamos, Dec 2002. 
+
+\subsection{Book Chapters}
+
+\textbf{Joshi AA},  Registration. In: Spalletta G., Piras F., Gili T. (eds) Brain Morphometry. Neuromethods, vol 136. Humana Press, New York, NY, 2018.
+
+\subsection{Technical Reports}
+
+Lepore N, \textbf{Joshi AA}, Leahy RM, Brun CC, Chou YY, Pennec X, Lee AD, Barysheva M, de Zubicaray GI, Wright MJ, McMahon KL, Toga AW, Thompson PM (2009). Surface and Volume Registration of Brain Magnetic Resonance Images, 4D Technical Report, April 2009.
+
+Lederman C, \textbf{Joshi AA}, Dinov I, Van Horn JD, Chan K, Vese L, Toga AW, Automatic Structural Brain Registration Using Finite Elements and Active Surfaces, UCLA Computational and Applied Mathematics Reports, December 2010. 
+
+\subsection{Thesis work}
+\textbf{Joshi AA}, Geometric Methods for Image Registration and Analysis, PhD Dissertation, Ming Hseih Dept. Electrical Engineering, University of Southern California, Los Angeles, 2008.
+
+\textbf{Joshi AA}, Harmonic Maps Between Riemannian Manifolds, Masters Thesis, Dept. of Mathematics, University of Southern California, Los Angeles, 2006.
+
+\textbf{Joshi AA}, Shape Recovery in 2D, 3D Medical Images using Level Set Method, Masters Thesis, Dept. of Electrical Engineering, Indian Institute of Technology, 2000.
+
+\subsection{Talks and Presentations}
+
+Joshi AA, Geometric techniques, PDEs and manifold learning for brain imaging. USC Mark and Mary Stevens
+Neuroimaging and Informatics Institute, 
+Keck School of Medicine of USC, 2017.
+
+Joshi AA, Brain Registration in BrainSuite, Childrens Hospital, Los Angeles, 2016.
+
+Joshi AA, BrainSuite-Brainstorm Training session USC University Park Campus, Los Angeles, October 2015.
+
+Joshi AA, BrainSuite – NeuroImaging Training Program 2015 UCLA Advanced Neuroimaging Summer Program, University of California, Los Angeles, August 2015.  
+
+Joshi AA, Geometric methods for bran image registration and signal analysis, Centro de Investigación en Matemáticas, 2012.
+
+Joshi AA, Geometric methods for brain image registration and signal analysis, University of Southern California, Signal and Image Processing Institute, 2011.
+
+Geometric methods for brain image registration and signal analysis, University of California, Los Angeles, Dept. of Mathematics, Applied Math Colloquium, 2010.
+
+Geometric methods for brain image registration, University of California, Los Angeles, Image Processing Seminar, 2010. 
+
+Geometric methods for brain image registration, University of North Carolina at Chapel Hill, 2010. 
+
+Medical image registration and analysis, Workshop at Children's Hospital, Los Angeles, 2009.
+
+Geometric methods for brain image registration, SRI International, 2009. 
+
+Medical image registration and analysis, DSP Experiments in MATLAB workshop at RSCOE, University of Pune, 2009.
+
+Geometric methods for brain image registration, University of California, Davis, 2008.
+
+Geometric methods for brain image registration and signal analysis, University of California, Los Angeles, LONI, CCB Presents, 2008.
+
+Geometric methods for brain image registration and signal analysis, CSAIL, Massachutetts Institute of Technology, Biomedical Imaging and Analysis Seminar Series, 2008.
+
+Simultaneous Surface and Volume Registration using Harmonic Maps, SIAM conference on Imaging Sciences, Minneapolis, 2006.
+
+
+%------------------------------------------------------------------------------
+
+%%===========================================================================%%
+%\newpage
+%\opening
+
+
+%%---------------------------------------------------------------------------%%
+
+%\begin{center}
+%\vspace{\fill}\ \newline
+%{\tiny \rm $ $RCSfile: anand\_resume.tex,v $ $ }
+%{\tiny \rm $ $Date: 2007-12-31 22:21:04 $ $ }
+%{\tiny \rm $ $Revision: 1.5 $ $ }
+%\end{center}
+
+\end{resume}
+
+\end{document}
+
+%%===========================================================================%%
+\grid
